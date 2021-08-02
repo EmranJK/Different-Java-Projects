@@ -1,0 +1,29 @@
+<object-stream>
+  <sample.Node>
+    <contents class="sample.Election">
+      <type>general</type>
+      <location>Dublin</location>
+      <year>1989</year>
+      <winners>4</winners>
+      <candidates/>
+    </contents>
+    <next>
+      <contents class="sample.Politician">
+        <name>ta</name>
+        <dob>4112</dob>
+        <party>hh</party>
+        <country>yy</country>
+        <image>mm</image>
+      </contents>
+      <next>
+        <contents class="sample.Politician">
+          <name>aa</name>
+          <dob>4112</dob>
+          <party>ss</party>
+          <country>cc</country>
+          <image>gg</image>
+        </contents>
+      </next>
+    </next>
+  </sample.Node>
+</object-stream>
