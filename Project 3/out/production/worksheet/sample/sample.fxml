@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TabPane prefHeight="535.0" prefWidth="906.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Black &amp; White">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="506.0" prefWidth="815.0">
+                     <children>
+                        <ImageView fx:id="picture" fitHeight="180.0" fitWidth="180.0" layoutX="42.0" layoutY="28.0" onMouseClicked="#pixelReader2" pickOnBounds="true" preserveRatio="true" />
+                        <TextArea fx:id="details" layoutX="42.0" layoutY="265.0" prefHeight="200.0" prefWidth="824.0" />
+                        <Button layoutX="830.0" layoutY="468.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+                        <Button layoutX="111.0" layoutY="232.0" mnemonicParsing="false" onAction="#browse" style="-fx-font-weight: bold;" text="Browse" />
+                        <ImageView fx:id="picture2" fitHeight="180.0" fitWidth="180.0" layoutX="263.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="753.0" layoutY="232.0" mnemonicParsing="false" onAction="#makeBlueWhite" style="-fx-background-color: blue; -fx-font-weight: bold;" text="Blue" textFill="WHITE" />
+                        <Button layoutX="335.0" layoutY="232.0" mnemonicParsing="false" onAction="#makeRedWhite" style="-fx-background-color: red; -fx-font-weight: bold;" text="Red" textFill="WHITE" />
+                        <ImageView fx:id="picture3" fitHeight="180.0" fitWidth="180.0" layoutX="483.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="picture4" fitHeight="180.0" fitWidth="180.0" layoutX="683.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="111.0" layoutY="5.0" text="Original" />
+                        <Label layoutX="343.0" layoutY="5.0" text="Red" />
+                        <Label layoutX="557.0" layoutY="5.0" text="Orange" />
+                        <Label layoutX="761.0" layoutY="5.0" text="Blue" />
+                        <Button layoutX="549.0" layoutY="232.0" mnemonicParsing="false" onAction="#makeOrangeWhite" style="-fx-background-color: orange; -fx-font-weight: bold;" text="Orange" textFill="WHITE" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="taby" text="Squares">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="picture5" fitHeight="180.0" fitWidth="180.0" layoutX="26.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="picture6" fitHeight="180.0" fitWidth="180.0" layoutX="26.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="95.0" layoutY="45.0" text="Original" />
+                        <Label layoutX="96.0" layoutY="253.0" text="Altered" />
+                        <Button layoutX="844.0" layoutY="466.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+                        <Button layoutX="324.0" layoutY="28.0" mnemonicParsing="false" onAction="#browse" text="Browse" />
+                        <Button layoutX="250.0" layoutY="28.0" mnemonicParsing="false" onAction="#makeBlueWhite" style="-fx-background-color: blue;" text="Blue" textFill="WHITE" />
+                        <Button layoutX="673.0" layoutY="28.0" mnemonicParsing="false" onAction="#makeRedWhite" style="-fx-background-color: red;" text="Red" textFill="WHITE" />
+                        <Button layoutX="425.0" layoutY="28.0" mnemonicParsing="false" onAction="#makeOrangeWhite" style="-fx-background-color: orange;" text="Orange" textFill="WHITE" />
+                        <ImageView fx:id="pictureOfColor" fitHeight="105.0" fitWidth="113.0" layoutX="130.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="519.0" layoutY="28.0" mnemonicParsing="false" onAction="#randColor" text="Random colouring" />
+                        <ImageView fx:id="picture7" fitHeight="290.0" fitWidth="290.0" layoutX="602.0" layoutY="68.0" onMouseClicked="#pixelReader2" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="picture8" fitHeight="290.0" fitWidth="290.0" layoutX="289.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="725.0" layoutY="28.0" mnemonicParsing="false" onAction="#makeColor" text="Color" />
+                        <Button layoutX="194.0" layoutY="28.0" mnemonicParsing="false" onAction="#unionSet" text="Pixel" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</GridPane>
