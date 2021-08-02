@@ -1,0 +1,33 @@
+
+Landmark, WIT, Cultural, 341, 600
+Landmark, Waterford Golf Club, Social, 628, 145
+Landmark, University Hospital Waterford, Cultural, 1156, 528
+Landmark, Waterford School of Grinds, Cultural, 786, 378
+Landmark, Waterford Regional Sports Center, Social, 566, 568
+Landmark, McDonalds, Social, 706, 283
+Landmark, Tower Hotel, Social, 804, 303
+
+// ALL
+
+Link, WIT, Waterford Regional Sports Center, 500
+Link, Waterford Regional Sports Center, University Hospital Waterford, 2700
+Link, University Hospital Waterford, Waterford School of Grinds, 2000
+Link, Waterford School of Grinds, Tower Hotel, 1000
+Link, Tower Hotel, McDonalds, 500
+Link, McDonalds, Waterford Golf Club, 1140
+Link, Waterford Golf Club, WIT, 5200
+
+// RED
+
+Link, Waterford Regional Sports Center, Tower Hotel, 2150
+Link, Waterford Golf Club, Waterford Regional Sports Center, 2950
+
+// BLUE
+
+Link, WIT, Waterford School of Grinds, 2270
+Link, Waterford School of Grinds, University Hospital Waterford, 2000
+Link, University Hospital Waterford, WIT, 4130
+
+
+
+handle the errors and create connections
